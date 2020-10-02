@@ -4,7 +4,9 @@ function Snake() {
   this.xspeed = 1;
   this.yspeed = 0;
   this.total = 0;
+  this.direction = "RIGHT";
   this.tail = [];
+
 
   this.eat = function(pos) {
     var d = dist(this.x, this.y, pos.x, pos.y);
